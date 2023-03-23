@@ -1,0 +1,36 @@
+.learn-more-section {
+    background-color: $third-color;
+
+
+    .container {
+
+        .content-block {
+            padding: 60px 0 60px 52px;
+
+            .section-title {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 61px;
+            }
+
+            .section-text {
+                color: $second-font-color;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .section-btn {
+                background-color: $second-color;
+                color: $second-font-color;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+
+    }
+
+
+}

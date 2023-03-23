@@ -1,0 +1,25 @@
+.contact-section {
+
+    .section__title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .list-title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: $second-font-color;
+    }
+
+    .list-item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+
+        a {
+            color: #000;
+        }
+    }
+}

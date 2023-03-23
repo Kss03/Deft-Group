@@ -1,0 +1,63 @@
+
+.static-pages-top-banner__paragraph {
+
+    // background-image в стилях родительского длока
+
+    .paragraph__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: $second-font-color;
+    }
+
+    .paragraph__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+
+        li {
+            margin-left: 70px;
+        }
+    }
+}
+
+.static-pages-top-banner {
+
+    .container {
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto 100%;
+        width: 100%;
+        min-height: 450px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .static-pages-top-banner {
+
+        .container {
+            min-height: 380px;
+            height: 380px;
+            background-size: auto 100%;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .static-pages-top-banner {
+
+        .container {
+            min-height: 380px;
+            height: 380px;
+            background-size: auto 90%;
+        }
+    }
+}
+
+
+.static-pages-top-banner__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+}

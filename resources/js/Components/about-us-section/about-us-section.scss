@@ -1,0 +1,57 @@
+$about-us-bg: url(/resources/images/about-us-bg.png);
+
+.about-us-section {
+
+    .section__title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 52px;
+        color: $section-title-color;
+    }
+
+    .about-us__top {
+        min-height: 460px;
+        height: 460px;
+        background-image: $about-us-bg;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+
+        .about-us__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 146.5%;
+        }
+    }
+
+    @media (min-width: 1199.98px) {
+        .about-us__top {
+            min-height: 490px;
+            height: 490px;
+        }
+    }
+
+    .companies-list {
+
+        .col {
+            width: 215px;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 10.425px 10.425px rgba(0, 63, 128, 0.05);
+            background-color: #fff;
+        }
+    }
+
+    .docs-list {
+
+        .col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

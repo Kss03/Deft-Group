@@ -1,0 +1,42 @@
+$after-sale-bg: url(/resources/images/after-sale-bg.png);
+
+.after-sale-service-section {
+
+    .static-pages-top-banner {
+        .container {
+            background-image: $after-sale-bg;
+        }
+    }
+
+    .after-sale-service__paragraph {
+
+        .paragraph__title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            color: $second-font-color;
+        }
+
+        .paragraph__text {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+
+            li {
+                margin-left: 70px;
+            }
+        }
+    }
+
+    .after-sale-service-rests {
+        .after-sale-service__paragraph {
+            margin-bottom: 40px;
+
+            .paragraph__title {
+                margin-left: 50px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}

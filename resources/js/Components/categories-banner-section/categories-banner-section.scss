@@ -1,0 +1,58 @@
+
+
+.categories-banner-section {
+
+    .banner-titles {
+
+        .title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 61px;
+        }
+
+        .sub-title {
+            color: $second-font-color;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+    }
+
+    .banner-categories {
+
+        // выравнивание карточек 
+        .cat-big-block:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        .cat-link {
+
+            .cat-titles {
+                width: 230px;
+                height: 88px;
+                backdrop-filter: blur(14.5px);
+                color: $third-font-color;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+
+            // left category card 
+            .cat-big-pic {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            // small category cards 
+            .cat-small-pic {
+                left: 50%;
+                bottom: 40px;
+                transform: translateX(-50%);
+            }
+
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.footer {
+    background-color: $footer-background;
+    padding-top: 135px;
+    padding-bottom: 50px;
+
+    .footer-section{
+
+        p, a {
+            color: $second-font-color;
+        }
+
+        // animation links
+        a:hover {
+            opacity: .7;
+            transition: opacity .2 ease-in-out;
+        }
+    }
+}

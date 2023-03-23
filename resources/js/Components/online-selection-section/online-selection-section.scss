@@ -1,0 +1,38 @@
+$online-selection-bg: url(/resources/images/online-selection-bg.png);
+
+.online-selection-section {
+
+    .static-pages-top-banner {
+        .container {
+            background-image: $online-selection-bg;
+        }
+    }
+
+    .online-selection__paragraph {
+
+        .paragraph__title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            color: $second-font-color;
+        }
+
+        .paragraph__text {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+        }
+    }
+
+    .online-selection-rests {
+        .online-selection__paragraph {
+            margin-bottom: 40px;
+
+            .paragraph__title {
+                margin-left: 50px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}

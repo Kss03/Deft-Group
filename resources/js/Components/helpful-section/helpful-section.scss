@@ -1,0 +1,88 @@
+$helpful-bg: url(/resources/images/helpful-bg.png);
+
+.helpful-section {
+
+    .helpful__paragraph {
+
+        .paragraph__title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            color: $second-font-color;
+        }
+
+        .paragraph__text {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+        }
+    }
+
+    .helpful__top {
+
+        .container {
+            background-image: $helpful-bg;
+            width: 100%;
+            min-height: 450px;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: auto 100%;
+        }
+    }
+
+    .helpful-rests {
+        .helpful__paragraph {
+            margin-bottom: 40px;
+
+            .paragraph__title {
+                margin-left: 50px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 1399.98px) {
+        .helpful__top {
+
+            .container {
+                min-height: 380px;
+                height: 380px;
+                background-size: auto 100%;
+            }
+
+            .helpful__title {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 52px;
+            }
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+        .helpful__top {
+            .container {
+                min-height: 380px;
+                height: 380px;
+                background-size: auto 90%;
+            }
+
+            .helpful__title {
+                padding-top: 20px;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 42px;
+                align-items: center;
+            }
+        }
+    }
+
+
+    .helpful__title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+
+}

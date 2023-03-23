@@ -1,0 +1,53 @@
+$two-bg: url(/resources/images/our-team-bg/two.png);
+$three-bg: url(/resources/images/our-team-bg/three.png);
+$four-bg: url(/resources/images/our-team-bg/four.png);
+
+.our-team-section {
+
+    .our-team__title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .our-team__paragraph {
+
+        .paragraph__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 146.5%;
+        }
+    }
+
+    .our-team__blocks {
+        margin-top: 70px;
+        height: 450px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    @media (max-width: 1199.98px) {
+        .our-team__blocks {
+            min-height: 380px;
+            height: 380px;
+        }
+    }
+
+    .our-team__two {
+        background-image: $two-bg;
+        background-position: right;
+    }
+
+    .our-team__three {
+        background-image: $three-bg;
+        background-position: left;
+    }
+
+    .our-team__four {
+        background-image: $four-bg;
+        background-position: right;
+    }
+
+
+}
