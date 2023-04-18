@@ -9,12 +9,24 @@ $helpful-bg: url(/resources/images/helpful-bg.png);
             font-size: 32px;
             line-height: 38px;
             color: $second-font-color;
+
+            @media (max-width: 991.98px) {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
         }
 
         .paragraph__text {
             font-weight: 400;
             font-size: 22px;
             line-height: 27px;
+
+            @media (max-width: 991.98px) {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 125%;
+            }
         }
     }
 
@@ -22,12 +34,48 @@ $helpful-bg: url(/resources/images/helpful-bg.png);
 
         .container {
             background-image: $helpful-bg;
-            width: 100%;
+            // width: 100%;
             min-height: 450px;
             height: 450px;
             background-repeat: no-repeat;
             background-position: right;
             background-size: auto 100%;
+
+            @media (max-width: 1399.98px) {
+                min-height: 380px;
+                height: 380px;
+                background-size: auto 100%;
+            }
+
+            @media (max-width: 1199.98px) {
+                min-height: 380px;
+                height: 380px;
+                background-size: auto 90%;
+            }
+
+            @media (max-width: 991.98px) {
+                min-height: 200px;
+                height: 200px;
+                background-size: auto 100%;
+            }
+
+            @media (max-width: 576.98px) {
+                min-height: 170px;
+                height: 170px;
+                background-size: 250px;
+                background-position: right -20px bottom 50%;
+            }
+
+            @media (max-width: 470.98px) {
+                min-height: 150px;
+                height: 150px;
+                background-size: 250px;
+                background-position: right -40px bottom 50%;
+            }
+            @media (max-width: 430.98px) {
+                background-position: right -40px bottom 50%;
+                background-size: 230px;
+            }
         }
     }
 
@@ -40,48 +88,35 @@ $helpful-bg: url(/resources/images/helpful-bg.png);
                 margin-bottom: 20px;
             }
         }
-    }
 
-    @media (max-width: 1399.98px) {
-        .helpful__top {
+        @media (max-width: 991.98px) {
+            .helpful__paragraph {
+                margin-bottom: 20px;
 
-            .container {
-                min-height: 380px;
-                height: 380px;
-                background-size: auto 100%;
-            }
-
-            .helpful__title {
-                font-weight: 600;
-                font-size: 40px;
-                line-height: 52px;
+                .paragraph__title {
+                    margin-left: 20px;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
-
-    @media (max-width: 1199.98px) {
-        .helpful__top {
-            .container {
-                min-height: 380px;
-                height: 380px;
-                background-size: auto 90%;
-            }
-
-            .helpful__title {
-                padding-top: 20px;
-                font-weight: 600;
-                font-size: 36px;
-                line-height: 42px;
-                align-items: center;
-            }
-        }
-    }
-
 
     .helpful__title {
         font-weight: 600;
         font-size: 44px;
         line-height: 52px;
+
+        @media (max-width: 991.98px) {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        @media (max-width: 380.98px) {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 
 

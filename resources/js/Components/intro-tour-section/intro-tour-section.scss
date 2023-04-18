@@ -7,21 +7,6 @@ $intro-tour-bg: url(/resources/images/intro-tour-bg.png);
         .container {
             background-image: $intro-tour-bg;
         }
-
-        // @media (min-width: 1400px) {
-        //     .container {
-        //         padding-left: 100px;
-        //         padding-right: 100px;
-        //         background-position: 95%;
-        //     }
-        // }
-
-        // .static-pages-top-banner__title {
-        //     padding-top: 70px;
-        //     font-weight: 600;
-        //     font-size: 44px;
-        //     line-height: 52px;
-        // }
     }
 
     .intro-tour__paragraph {
@@ -31,12 +16,24 @@ $intro-tour-bg: url(/resources/images/intro-tour-bg.png);
             font-size: 32px;
             line-height: 38px;
             color: $second-font-color;
+
+            @media (max-width: 991.98px) {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
         }
 
         .paragraph__text {
             font-weight: 400;
             font-size: 22px;
             line-height: 27px;
+
+            @media (max-width: 991.98px) {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 125%;
+            }
         }
     }
 
@@ -47,6 +44,17 @@ $intro-tour-bg: url(/resources/images/intro-tour-bg.png);
             .paragraph__title {
                 margin-left: 50px;
                 margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .intro-tour__paragraph {
+                margin-bottom: 20px;
+
+                .paragraph__title {
+                    margin-left: 20px;
+                    margin-bottom: 15px;
+                }
             }
         }
     }

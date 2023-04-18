@@ -9,7 +9,6 @@
 
 //header
 @import './Components/header/header.scss';
-@import './Components/header/header-dropdown/header-dropdown.scss';
 @import './Components/modal-contact-us/modal-contact-us.scss';
 
 //footer
@@ -19,8 +18,6 @@
 @import './Components/product-card/product-card.scss';
 
 //home page
-@import './Components/dropdownSearchBar/dropdownSearchBar.scss';
-@import './Components/home-search-section/home-search-section.scss';
 @import './Components/home-top-banner/home-top-banner.scss';
 @import './Components/promo-home-section/promo-home-section.scss';
 @import './Components/categories-banner-section/categories-banner-section.scss';
@@ -30,14 +27,12 @@
 
 //other sections
 @import './Components/rev-vac-section/rev-vac-section.scss';
-@import './Components/review-vacancy-card/review-vacancy-card.scss';
 @import './Components/need-help-section/need-help-section.scss';
 @import './Components/product-page-section/product-page-section.scss';
 @import './Components/swiper-product-page/swiper-product-page.scss';
-@import './Components/search-page-bar-section/search-page-bar-section.scss';
+@import './Components/search-bar/search-bar.scss';
 @import './Components/search-page-result-section/search-page-result-section.scss';
 @import './Components/news-page-section/news-page-section.scss';
-@import './Components/news-page-section/news-card/news-card.scss';
 @import './Components/helpful-section/helpful-section.scss';
 @import './Components/contact-section/contact-section.scss';
 @import './Components/about-us-section/about-us-section.scss';

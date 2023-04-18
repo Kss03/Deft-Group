@@ -1,17 +1,21 @@
 
 import ProductCard from "../product-card/product-card";
 
+import room from '../../../images/card-img/card-specs/room.svg';
+import kitchen from '../../../images/card-img/card-specs/kitchen.svg';
+import bathroom from '../../../images/card-img/card-specs/bathroom.svg';
+
 export default function SearchPageResultSection() {
     //пример для карточки (пропс)
     const data = {
         name: 'Квартира в Алании',
         picture: 'https://picsum.photos/1920/1080',
         location: 'Махмутлар',
-        price: '150 000',
+        price: '1234567',
         specifications: [
-            {spec: '6', img: 'room'},
-            {spec: '2', img: 'kitchen'},
-            {spec: '3', img: 'bathroom'},
+            {spec: '6', img: room},
+            {spec: '2', img: kitchen},
+            {spec: '3', img: bathroom},
         ],
         cardLink: '/product'
     }
@@ -27,7 +31,7 @@ export default function SearchPageResultSection() {
 
                 {/* <!-- результаты  --> */}
 
-                <div className="row row-cols-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 gy-5 gx-xxl-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 gy-5 gx-xxl-5">
                     <div className="col">
                         <ProductCard
                             data={data}/>

@@ -10,13 +10,13 @@ import swimImg from '../../../images/card-descr-img/swimming-pool.svg';
 function ProductPageSection() {
 
     const imagesArr = [
-        {imageUrl: "https://picsum.photos/1920/1080", id: 1},
-        {imageUrl: "https://picsum.photos/1920/1081", id: 2},
-        {imageUrl: "https://picsum.photos/1920/1082", id: 3},
-        {imageUrl: "https://picsum.photos/1920/1083", id: 4},
-        {imageUrl: "https://picsum.photos/1920/1084", id: 5},
-        {imageUrl: "https://picsum.photos/1920/1085", id: 6},
-        {imageUrl: "https://picsum.photos/1920/1086", id: 7},
+        {imageUrl: "https://picsum.photos/1920/1280", id: 1},
+        {imageUrl: "https://picsum.photos/1920/1281", id: 2},
+        {imageUrl: "https://picsum.photos/1920/1282", id: 3},
+        {imageUrl: "https://picsum.photos/1920/1283", id: 4},
+        {imageUrl: "https://picsum.photos/1920/1284", id: 5},
+        {imageUrl: "https://picsum.photos/1920/1285", id: 6},
+        {imageUrl: "https://picsum.photos/1920/1286", id: 7},
     ];
 
     return(
@@ -24,7 +24,7 @@ function ProductPageSection() {
         <section className="product-page-section">
             <div className="container">
                 <div className="row">
-                    <h2 className="card__titles col-12 mb-3">
+                    <h2 className="card__titles col-12 mb-3 pe-5 pe-sm-5 pe-lg-0">
                         Меблированная квартира в&nbsp;районе Оба
                     </h2>
                     <div className="col-12 col-xxl-9 col-lg-8">
@@ -35,8 +35,8 @@ function ProductPageSection() {
                     </div>
 
                     <div className="col-12 col-xxl-3 col-lg-4 card__main-descr">
-                        <div className="d-flex flex-column h-100 justify-content-between">
-                            <div className="col-6 col-lg-12 mb-1 d-flex flex-column align-items-center">
+                        <div className="d-flex flex-column h-100 justify-content-lg-between align-items-center">
+                            <div className="mb-3 mb-lg-1 d-flex flex-column align-items-center justify-content-center w-auto">
                                 <p className="mb-3">Стоимость:</p>
                                 <p className="mb-3">
                                     <span className="card__price">210.000&nbsp;€</span>
@@ -53,7 +53,7 @@ function ProductPageSection() {
                                 <button className="btn btn__watch py-2">Онлайн-просмотр</button>
 
                             </div>
-                            <div className="col-6 col-lg-12 card__descr-block ps-4 py-3">
+                            <div className="card__descr-block ps-4 pe-3 py-3">
                                 <ul className="list-unstyled detailed-list mb-0">
                                     <li className="detailed-item d-flex flex-nowrap">
                                         <div className="me-2">
@@ -141,7 +141,7 @@ function ProductPageSection() {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-7 mt-5">
                         <h2 className="card__titles text-center mb-4">Описание</h2>
-                        <div className="card__descr">
+                        <div className="card__descr px-3">
                             <p>
                                 Сегодняшнее предложение&nbsp;&mdash; особая гордость компании DEFT GROUP, ведь этот комплекс построили мы&nbsp;сами! Мы&nbsp;также являемся управляющей компанией этого шикарного комплекса у&nbsp;моря, он&nbsp;находится в&nbsp;идеальном состоянии благодаря разумному управлению и&nbsp;высокому качеству строительства и&nbsp;отделки!
                             </p>
@@ -156,53 +156,53 @@ function ProductPageSection() {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-5 mt-5">
                         <h2 className="card__titles text-center mb-4">Инфрастуктура</h2>
-                        <div className="row row-cols-lg-2 g-2 gy-lg-4 card__descr">
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={swimImg} alt="" />
+                        <div className="row row-cols-2 row-cols-lg-2 g-2 gx-3 gx-lg-2 gy-3 gy-lg-4 card__descr justify-content-center">
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={swimImg} alt="" />
                                 <span>Открытый бассейн</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={barImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={barImg} alt="" />
                                 <span>Бар</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={gymImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={gymImg} alt="" />
                                 <span>Тренажерный зал</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={beachImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={beachImg} alt="" />
                                 <span>Собственный пляж</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={swimImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={swimImg} alt="" />
                                 <span>Открытый бассейн</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={barImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={barImg} alt="" />
                                 <span>Бар</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={gymImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={gymImg} alt="" />
                                 <span>Тренажерный зал</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={beachImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={beachImg} alt="" />
                                 <span>Собственный пляж</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={swimImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={swimImg} alt="" />
                                 <span>Открытый бассейн</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={barImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={barImg} alt="" />
                                 <span>Бар</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={gymImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={gymImg} alt="" />
                                 <span>Тренажерный зал</span>
                             </div>
-                            <div className="col d-flex flex-nowrap">
-                                <img className="me-2" src={beachImg} alt="" />
+                            <div className="col-6 col-md-5 d-flex flex-nowrap align-items-center">
+                                <img className="me-3 me-lg-2 descr-img" src={beachImg} alt="" />
                                 <span>Собственный пляж</span>
                             </div>
                         </div>
@@ -212,7 +212,7 @@ function ProductPageSection() {
                             Видео-обзор
                         </h2>
                         <div className="card__video">
-                            <iframe width="100%" height="522" src="https://www.youtube.com/embed/PhYReM9UPoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/PhYReM9UPoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

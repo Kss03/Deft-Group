@@ -15,6 +15,12 @@ $sell-apart-bg: url(/resources/images/sell-apart-bg.png);
             font-size: 32px;
             line-height: 38px;
             color: $second-font-color;
+
+            @media (max-width: 991.98px) {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+            }
         }
 
         .paragraph__text {
@@ -22,8 +28,18 @@ $sell-apart-bg: url(/resources/images/sell-apart-bg.png);
             font-size: 22px;
             line-height: 27px;
 
+            @media (max-width: 991.98px) {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 125%;
+            }
+
             li {
                 margin-left: 70px;
+
+                @media (max-width:991.98px) {
+                    margin-left: 20px;
+                }
             }
         }
     }
@@ -47,21 +63,16 @@ $sell-apart-bg: url(/resources/images/sell-apart-bg.png);
                 margin-bottom: 20px;
             }
         }
-    }
 
-    @media (max-width: 1199.98px) {
-        .sell-apart__top {
-            min-height: 380px;
-            height: 380px;
+        @media (max-width: 991.98px) {
+            .sell-apart__paragraph {
+                margin-bottom: 20px;
+
+                .paragraph__title {
+                    margin-left: 20px;
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
-
-
-    .sell-apart__title {
-        font-weight: 600;
-        font-size: 44px;
-        line-height: 52px;
-    }
-
-
 }

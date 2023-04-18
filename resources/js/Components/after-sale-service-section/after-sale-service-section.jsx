@@ -1,3 +1,5 @@
+import MediaQuery from "react-responsive";
+
 import { v4 } from "uuid";
 import StaticPagesTopBanner from "../static-pages-top-banner/static-pages-top-banner";
 
@@ -10,12 +12,25 @@ const AfterSaleServiceSection = () => {
             'И это не только вопросы обустройства нового жилища, но и консультации по образовательным учреждениям, здоровью, любым бытовым вопросам и даже по бизнесу.'
         ]
     }
+    const topItemsMobile = {
+        title: 'Послепродажный сервис',
+        text: [
+            'Служба заботы о клиентах Deft Group (служба послепродажного сервиса) - комплекс услуг, которые мы предоставляем вам после покупки.'
+        ]
+    }
 
     return (
         <div className="after-sale-service-section pt-lg-4">
-            <StaticPagesTopBanner
-                title={topItems.title}
-                text={topItems.text} />
+            <MediaQuery maxWidth={991.98}>
+                <StaticPagesTopBanner
+                    title={topItemsMobile.title}
+                    text={topItemsMobile.text} />
+            </MediaQuery>
+            <MediaQuery minWidth={991.98}>
+                <StaticPagesTopBanner
+                    title={topItems.title}
+                    text={topItems.text} />
+            </MediaQuery>
             <div className="after-sale-service-rests">
                 <div className="container">
                     <div className="row justify-content-center">

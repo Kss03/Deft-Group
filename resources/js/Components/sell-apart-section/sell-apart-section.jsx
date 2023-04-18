@@ -1,26 +1,48 @@
 import StaticPagesTopBanner from "../static-pages-top-banner/static-pages-top-banner";
 
+import MediaQuery from "react-responsive";
+
 const SellApartSection = () => {
 
     const topItems = {
         title: 'Продать свою недвижимость',
         text: [
             'Когда вы решаете продать свою недвижимость, вы вступаете в процесс, который может быть захватывающим, но иногда и очень трудным. Но не волнуйтесь, вы можете найти помощь в нашей компании. Мы готовы помочь вам продать вашу недвижимость быстро и эффективно.',
+        ]
+    }
 
+    const topItemsMobile = {
+        title: 'Продать свою недвижимость',
+        text: [
+            'Мы готовы помочь вам продать вашу недвижимость быстро и эффективно.',
         ]
     }
 
 
     return (
         <div className="sell-apart-section pt-lg-4">
-            <StaticPagesTopBanner
-                title={topItems.title}
-                text={topItems.text} />
+            <MediaQuery maxWidth={991.98}>
+                <StaticPagesTopBanner
+                    title={topItemsMobile.title}
+                    text={topItemsMobile.text} />
+            </MediaQuery>
+            <MediaQuery minWidth={991.98}>
+                <StaticPagesTopBanner
+                    title={topItems.title}
+                    text={topItems.text} />
+            </MediaQuery>
+
+
             <div className="sell-apart-rests">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
                             <div className="sell-apart__paragraph paragraph mb-lg-5">
+                                <MediaQuery maxWidth={991.98}>
+                                    <p className="paragraph__text">
+                                        Когда вы&nbsp;решаете продать свою недвижимость, вы&nbsp;вступаете в&nbsp;процесс, который может быть захватывающим, но&nbsp;иногда и&nbsp;очень трудным. Но&nbsp;не&nbsp;волнуйтесь, вы&nbsp;можете найти помощь в&nbsp;нашей компании.
+                                    </p>
+                                </MediaQuery>
                                 <h4 className="paragraph__title">
                                     Почему стоит выбрать нашу компанию?
                                 </h4>

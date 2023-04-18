@@ -22,9 +22,11 @@
     },
     "dependencies": {
         "bootstrap": "^5.2.3",
+        "bootstrap-icons": "^1.10.4",
         "react-bootstrap": "^2.7.2",
-        "react-id-generator": "^3.0.2",
+        "react-responsive": "^9.0.2",
         "swiper": "^9.1.1",
-        "uuid": "^9.0.0"
+        "uuid": "^9.0.0",
+        "uuid4": "^2.0.3"
     }
 }

@@ -1,3 +1,4 @@
+import MediaQuery from 'react-responsive';
 
 import chooseUsImg from '../../../images/choose-us-img.png';
 
@@ -23,16 +24,16 @@ function ChooseUsSection() {
 
     const advArr = advItems.map( (item) => {
         return (
-            <li className="d-flex" key={item.title}>
-                <div className="row d-flex flex-nowrap gx-3">
-                    <div className="col-auto">
+            <li key={item.title}>
+                <div className="content-block row d-flex flex-nowrap gx-2 gx-sm-3 gx-lg-3">
+                    <div className=" content-icon col-auto">
                         <img src={item.img} alt="" />
                     </div>
                     <div className="col d-flex flex-column pt-1">
                         <h5 className="content-title">
                             {item.title}
                         </h5>
-                        <p className="text-wrap pe-lg-5">
+                        <p className="content-text text-wrap pe-lg-5">
                             {item.text}
                         </p>
                     </div>
@@ -43,20 +44,24 @@ function ChooseUsSection() {
     return(
         <section className="choose-us-section mb-lg-5 ">
             <div className="container">
-                <h2 className="h2 section-title text-lg-center mb-lg-4">
+                <h2 className="h2 section-title text-center mb-lg-4">
                     Почему выбирают нас?
                 </h2>
-                <div className="row flex-nowrap justify-content-center gx-5">
-                    <div className="col-4 d-flex align-items-stretch">
-                        <ul className="list-unstyled d-flex flex-column justify-content-between">
+                <div className="row flex-wrap justify-content-center gx-lg-5">
+                    <div className=" col-auto col-lg-4 d-flex align-items-stretch">
+                        <ul className="list-unstyled d-flex flex-column justify-content-between mb-0">
                             {advArr.slice(0, 3)}
                         </ul>
                     </div>
-                    <div className="col-auto text-center">
-                        <img src={chooseUsImg} alt="build" className="img-fluid" />
-                    </div>
-                    <div className="col-4 d-flex align-items-stretch">
-                        <ul className="list-unstyled d-flex flex-column justify-content-between">
+
+                    <MediaQuery minWidth={991.98} >
+                        <div className="col-auto text-centerd d-flex align-items-center">
+                            <img src={chooseUsImg} alt="build" className="img-fluid" />
+                        </div>
+                    </MediaQuery>
+
+                    <div className=" col-auto col-lg-4 d-flex align-items-stretch">
+                        <ul className="list-unstyled d-flex flex-column justify-content-between mb-0">
                             {advArr.slice(3, 6)}
                         </ul>
                     </div>

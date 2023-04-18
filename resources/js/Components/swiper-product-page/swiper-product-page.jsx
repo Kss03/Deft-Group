@@ -33,14 +33,14 @@ export default function SwiperProductPage({imagesArr}) {
     return (
         <section className="slider">
             <div className="slider__flex d-flex align-items-start">
-                <div className="slider__col me-3">
+                <div className="slider__col me-3 mt-2 mt-md-3 mt-lg-0">
                     <Swiper
                         // параметры слайдера
                         onSwiper={setThumbsSwiper}
                         direction={swiperDirection}
                         loop={true}
                         spaceBetween={10}
-                        slidesPerView={4}
+                        slidesPerView={"auto"}
                         mousewheel={true}
                         grabCursor={true}
                         freeMode={true}

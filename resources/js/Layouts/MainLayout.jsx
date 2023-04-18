@@ -3,8 +3,7 @@ import { Link } from "@inertiajs/react";
 import Header from "@/Components/header/Header";
 import Footer from "@/Components/footer/Footer";
 import HomeTopBanner from "@/Components/home-top-banner/home-top-banner";
-import DropdownSearchBar from "@/Components/dropdownSearchBar/dropdownSeacrhBar";
-import HomeSearchSection from "@/Components/home-search-section/home-search-section";
+import SearchBar from "@/Components/search-bar/search-bar";
 import PromoHomeSection from "@/Components/promo-home-section/promo-home-section";
 import CategoriesBannerSection from "@/Components/categories-banner-section/categories-banner-section";
 import LearnMoreSection from "@/Components/learn-more-section/learn-more-section";
@@ -19,7 +18,7 @@ export default function MainLayout() {
 
                 {/* баннер с поиском на главной странице */}
                 <HomeTopBanner />
-                <HomeSearchSection />
+                <SearchBar />
                 {/* лучшие предложения на гл странице */}
                 <PromoHomeSection />
                 {/* недвижимость по категориям */}

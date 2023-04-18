@@ -1,3 +1,5 @@
+import {useMediaQuery} from 'react-responsive';
+
 import Header from '@/Components/header/Header';
 
 import RevVacSection from '@/Components/rev-vac-section/rev-vac-section';
@@ -15,6 +17,14 @@ export default function VacanciesLayout() {
         text: 'Менеджер Александра сделала онлайн подбор квартир по желанию клиента, после чего был организован инфо-тур с проживанием в отеле и трансфер. Ирина выбрала вариант с шикарной локацией в 300 метрах от моря вблизи с городской инфраструктурой. Мы оперативно подготовили все необходимые документы для заключения сделки и оформления ТАПУ. Сейчас квартира находится в рамках нашего послепродажного сервиса и подготавливается для сдачи в аренду.'
     }
 
+    const pStyle = {};
+
+    if (useMediaQuery({query: '(max-width: 991.98px)'})) {
+        pStyle.fontSize = "13px";
+    } else {
+        pStyle.fontSize = "22px";
+    }
+
     return (
         <>
             <Header />
@@ -23,7 +33,7 @@ export default function VacanciesLayout() {
                 <RevVacSection
                     items={exampleItem}
                     secTitle='Вакансии'/>
-                <p className='text-center pt-lg-4 fs-5'>Присылайте свое резюме на почту <a href="mailto:info@citydeft.com" className='text-dark'>info@citydeft.com</a> или на любой мессенджер <a href="tel:+905077060007" className='text-dark'>+90 507 706 00 07</a></p>
+                <p className='text-center pt-lg-4' style={pStyle}>Присылайте свое резюме на почту <a href="mailto:info@citydeft.com" className='text-dark'>info@citydeft.com</a> или на любой мессенджер <a href="tel:+905077060007" className='text-dark text-nowrap'>+90 507 706 00 07</a></p>
             <Footer />
         </>
 

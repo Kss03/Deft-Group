@@ -1,4 +1,5 @@
 import { useId } from "react";
+import MediaQuery from "react-responsive";
 
 import bgImage from '../../../images/helpful-bg.png';
 
@@ -24,16 +25,18 @@ const HelpfulSection = () => {
     })
 
     return (
-        <div className="helpful-section pt-lg-4">
-            <div className="helpful__top mb-lg-5">
+        <div className="helpful-section pt-3 pt-lg-4">
+            <div className="helpful__top mb-3 mb-lg-5">
                 <div className="container">
                     <div className="row h-100">
-                        <h2 className="helpful__title col-lg-8 col-xl-7">
+                        <h2 className="helpful__title d-flex align-items-center col-7 col-md-7 col-lg-8 col-xl-7">
                             Покупка квартиры в&nbsp;Турции состоит из&nbsp;нескольких этапов:
                         </h2>
-                        <div className="col-lg-6 ps-4">
-                            {elemArr.slice(0, 1)}
-                        </div>
+                        <MediaQuery minWidth={991.98}>
+                            <div className=" col-6 col-md-6 col-lg-6 ps-lg-4">
+                                {elemArr.slice(0, 1)}
+                            </div>
+                        </MediaQuery>
                     </div>
                 </div>
             </div>
@@ -41,6 +44,9 @@ const HelpfulSection = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
+                        <MediaQuery maxWidth={991.98}>
+                            {elemArr.slice(0, 1)}
+                        </MediaQuery>
                             {elemArr.slice(1)}
                         </div>
                     </div>

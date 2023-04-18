@@ -5,6 +5,12 @@
         font-weight: 600;
         font-size: 44px;
         line-height: 52px;
+
+        @media (max-width: 991.98px) {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+        }
     }
 
     .section-form {
@@ -14,7 +20,8 @@
 
 
         .form-control {
-            width: 327px;
+            max-width: 327px;
+            width: 100%;
             height: 45px;
             border-radius: 30px;
         }
@@ -24,6 +31,10 @@
             border-radius: 30px;
             background-color: $third-color;
             color: $third-bf-color;
+
+            // @media (max-width: 991.98px) {
+            //     max-width: 200px;
+            // }
         }
 
         .btn-send:hover {

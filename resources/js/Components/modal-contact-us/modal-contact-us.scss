@@ -1,37 +1,52 @@
         // modal window
         .contact-modal {
             max-width: 750px;
-            
+
+            @media (max-width: 991.98px) {
+                max-width: 440px;
+            }
+
             .modal-content {
                 background-color: $third-color;
                 border-radius: 82px;
+
+                @media (max-width: 991.98px) {
+                    border-radius: 50px;
+                }
             }
 
             .modal-header {
                 background-color: $third-color;
                 color: $third-font-color;
-                border-top-right-radius: inherit;
-                border-top-left-radius: inherit;
+                // border-top-right-radius: inherit;
+                // border-top-left-radius: inherit;
 
                 .modal-title {
                     font-size: 48px;
                     font-weight: 700;
                     line-height: 61px;
-                    // letter-spacing: 1px;
+
+                    @media (max-width: 991.98px) {
+                        display: none;
+                    }
                 }
 
 
                 // close btn (in HTML position apsolute)
                 .close-btn {
-                    right: 75px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    background-color: inherit;
+                    background-color: rgba(0, 0, 0, 0);
                     border: none;
                     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     font-size: 55px;
                     font-weight: 400;
                     color: $third-font-color;
+
+                    @media (max-width: 991.98px) {
+                        font-size: 40px;
+                        font-weight: 200;
+                        line-height: 1;
+                        text-shadow: none;
+                    }
                 }
             }
 
@@ -39,8 +54,22 @@
                 background-color: $second-color;
                 border-radius: 82px;
 
+                @media (max-width: 991.98px) {
+                    border-radius: 50px;
+                }
+
                 p, a {
                     color: $second-font-color;
+
+                    @media (max-width: 991.98px) {
+                        font-size: 13px;
+                    }
+                }
+
+                .body-title {
+                    @media (max-width: 991.98px) {
+                        font-size: 18px;
+                    }
                 }
 
                 a:hover {
@@ -48,22 +77,41 @@
                     transition: opacity .3s ease-in-out;
                 }
 
+                .header__social-links {
+                    @media (max-width: 991.98px) {
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+
                 .form-group {
-                    width: 330px;
+                    width: 100%;
+                    max-width: 330px;
 
                     input {
                         height: 45px;
-                        margin-bottom: 21px;
                         border-radius: 23px;
+
+                        @media (max-width: 991.98px) {
+                            height: 35px;
+                            font-size: .9rem;
+                        }
                     }
 
-                    
+
                 }
 
                 .btn-send {
                     height: 45px;
                     color: $third-bf-color;
                     background-color: $third-color;
+
+                    @media (max-width: 991.98px) {
+                        height: 35px;
+                        font-size: .9rem;
+                    }
                 }
 
                 .btn-send:hover {
