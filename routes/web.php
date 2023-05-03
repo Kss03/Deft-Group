@@ -25,7 +25,7 @@ Route::inertia('/reviews', 'Reviews');
 Route::inertia('/vacancies', 'Vacancies');
 Route::inertia('/product', 'ProductCardPage');
 Route::inertia('/search', 'Search');
-Route::inertia('/news', 'News');
+Route::inertia('/articles', 'Articles');
 Route::inertia('/helpful', 'Helpful');
 Route::inertia('/contacts', 'Contacts');
 //Онлайн-подбор
@@ -38,6 +38,8 @@ Route::inertia('/intro-tour', 'IntroTour');
 Route::inertia('/sell-apart', 'SellApart');
 //Наша команда
 Route::inertia('/our-team', 'OurTeam');
+//Сохраненное
+Route::inertia('/saved', 'Saved');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
